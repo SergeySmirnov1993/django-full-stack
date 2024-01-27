@@ -1,8 +1,7 @@
 from django.shortcuts import render
-from django.views.generic import View
-from django.http import HttpResponse
+from django.views.generic import View, TemplateView
 
 
-class CBVView(View):
-    def get(self, request):
-        return HttpResponse("CLASS BASED VIEWS")
+class IndexView(TemplateView):
+    template_name = 'index.html'
+
