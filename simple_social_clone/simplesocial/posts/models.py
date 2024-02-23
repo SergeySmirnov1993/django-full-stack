@@ -5,7 +5,7 @@ from django.conf import settings
 # instead of import misaka
 import mistune
 
-from ..groups.models import Group
+from groups.models import Group
 
 from django.contrib.auth import get_user_model
 
